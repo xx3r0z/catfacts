@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js" defer></script>
+    <script src="app.js" defer></script>
+    <script src="https://use.fontawesome.com/2c998638fd.js"></script>
+    <title>Cat Facts</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="head-logo">CAT FACTS & BREEDS</h1>
+        <nav>
+            <div class="nav-container" data-facts-nav>Facts</div>
+            <div class="nav-container" data-breeds-nav>Breeds</div>
+        </nav>
+    </header>
+    <section class="main-section">
+        <section class="facts-section">
+            <div class="fact-container">
+                <p class="fact-paragraph" data-fact-paragraph>Click new fact to start!!!
+                </p>
+                <div class="button-container">
+                    <button class="save-fact-button" data-save-button>Save Fact</button>
+                    <button class="next-fact-button" data-next-button>New Fact</button>
+                </div>
+            </div>
+        </section>
+        <section class="saved-facts-section">
+            <fieldset>
+                <legend>Your Saved Facts</legend>
+                <ol class="saved-facts" data-facts-ol></ol>
+            </fieldset>
+            <button class="delete-all-facts" data-deleteAll>Delete all saved Facts</button>
+        </section>
+        <section class="breeds-section hide">
+            <div class="breed-main-container" data-breed-div></div>
+            <div class="button-container">
+                <button class="pageButton" data-page-button>1</button>
+                <button class="pageButton" data-page-button>2</button>
+                <button class="pageButton" data-page-button>3</button>
+                <button class="pageButton" data-page-button>4</button>
+            </div>
+        </section>
+    </section>
+
+</body>
+
+</html>
